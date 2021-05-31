@@ -1,3 +1,18 @@
+/*
+Sample Output:
+Writer: Written global value: 1. Readers: 0. Writers: 1.
+Writer: Written global value: 2. Readers: 0. Writers: 1.
+Writer: Written global value: 3. Readers: 0. Writers: 1.
+Reader: Read global value: 3. Readers: 5. Writers: 0.
+Reader: Read global value: 3. Readers: 4. Writers: 0.
+Reader: Read global value: 3. Readers: 3. Writers: 0.
+Reader: Read global value: 3. Readers: 2. Writers: 0.
+Reader: Read global value: 3. Readers: 1. Writers: 0.
+Writer: Written global value: 4. Readers: 0. Writers: 1.
+Writer: Written global value: 5. Readers: 0. Writers: 1.
+Parent(/main) quiting
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
